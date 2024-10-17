@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 
-body{
-  background-color: #ddd;
-}
 @keyframes marquee {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
@@ -14,10 +11,4 @@ body{
 .animate-marquee {
   display: inline-block;
   animation: marquee 10s linear infinite;
-}
-
-@media (max-width: 768px) {
-  .hero-section {
-      height: 50vh; /* Mobilde daha küçük yükseklik */
-  }
 }

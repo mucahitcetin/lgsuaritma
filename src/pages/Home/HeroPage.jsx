@@ -23,24 +23,24 @@ const HeroPage = () => {
     };
 
     return (
-        <section className="relative w-full h-screen overflow-hidden">
-            <div
-                className="w-full h-full bg-cover bg-center transition-all duration-1000"
-                style={{
-                    backgroundImage: `url(${images[currentIndex]})`,
-                    backgroundSize: 'contain', 
-                    backgroundRepeat: 'no-repeat', 
-                }}
-            >
-                <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-2">
-                    {images.map((_, index) => (
-                        <div
-                            key={index}
-                            className={`w-5 h-5 rounded-full cursor-pointer ${currentIndex === index ? 'bg-blue-500' : 'border-2 border-blue-500 bg-white'}`}
-                            onClick={() => handleDotClick(index)}
-                        />
-                    ))}
-                </div>
+        <section className="relative w-full xsm:h-60   sm:h-64 md:h-96  flex items-center justify-center overflow-hidden border border-red-500">
+            <img
+                src={images[currentIndex]}
+                alt={`Slider ${currentIndex + 1}`}
+                className="w-full h-full object-contain transition-all duration-1000"
+            />
+            <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-2">
+                {images.map((_, index) => (
+                    <div
+                        key={index}
+                        className={`lg:w-5 lg:h-5 w-3 h-3 rounded-full cursor-pointer ${
+                            currentIndex === index
+                                ? 'bg-blue-500'
+                                : 'border border-blue-500 bg-white'
+                        }`}
+                        onClick={() => handleDotClick(index)}
+                    />
+                ))}
             </div>
         </section>
     );
