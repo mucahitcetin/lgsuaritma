@@ -33,12 +33,7 @@ const Header = () => {
           >
             Ürünler
           </Link>
-          <Link
-            to="/cihazlar"
-            className="py-4 px-2 transition-colors duration-200 hover:bg-primary hover:text-white font-bold text-lg"
-          >
-            Cihazlar
-          </Link>
+        
 
           <Link
             to="/yorumlar"
