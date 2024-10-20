@@ -23,7 +23,7 @@ const HeroPage = () => {
     };
 
     return (
-        <section className="relative w-full xsm:h-60   sm:h-64 md:h-96  flex items-center justify-center overflow-hidden border border-red-500">
+        <section className="relative w-full xsm:h-60   sm:h-64 md:h-96  flex items-center justify-center overflow-hidden ">
             <img
                 src={images[currentIndex]}
                 alt={`Slider ${currentIndex + 1}`}

@@ -36,16 +36,16 @@ const Footer = () => {
       {/* Menü */}
       <div className="flex flex-col md:flex-row justify-center mb-4 text-center">
         <div className="mb-2 md:mb-0 md:mr-8 ">
-          <Link to="/hakkimizda" className="rounded cursor-pointer transition-all duration-200 text-hover-underline">Hakkımızda</Link>
+          <Link to="/hakkımızda" className="rounded cursor-pointer transition-all duration-200 text-hover-underline">Hakkımızda</Link>
         </div>
         <div className="mb-2 md:mb-0 md:mr-8">
-          <Link to="/hizmetler" className="rounded cursor-pointer transition-all duration-200 text-hover-underline">Ürünler</Link>
+          <Link to="/ürünler" className="rounded cursor-pointer transition-all duration-200 text-hover-underline">Ürünler</Link>
         </div>
         <div className="mb-2 md:mb-0 md:mr-8">
-          <Link to="/iletisim" className="rounded cursor-pointer transition-all duration-200 text-hover-underline">Yorumlar</Link>
+          <Link to="/yorumlar" className="rounded cursor-pointer transition-all duration-200 text-hover-underline">Yorumlar</Link>
         </div>
         <div>
-          <Link to="/blog" className="rounded cursor-pointer transition-all duration-200 text-hover-underline">İletişim</Link>
+          <Link to="/iletişim" className="rounded cursor-pointer transition-all duration-200 text-hover-underline">İletişim</Link>
         </div>
       </div>
 
