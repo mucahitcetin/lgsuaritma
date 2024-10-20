@@ -37,7 +37,7 @@ const Contact = () => {
 
   return (
     <section className="p-8">
-      <h1 className="text-3xl lg:text-4xl font-semibold mb-8 text-center text-blue-600">
+      <h1 className="text-3xl lg:text-4xl font-semibold mt-6 mb-8 text-center text-blue-600">
         İLETİŞİM
       </h1>
 
@@ -53,34 +53,35 @@ const Contact = () => {
             geçebilirsiniz. Sağlıklı ve temiz suya ulaşmak için buradayız!
           </p>
           <p>Adres:</p>
+          {/* logolar */}
           <div className="flex gap-4 mt-5">
             <a
               href="https://wa.me/905061010501"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaWhatsapp className="text-blue-600 text-5xl hover:opacity-80" />
+              <FaWhatsapp className="text-blue-600 text-3xl md:text-5xl hover:opacity-80" />
             </a>
             <a
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook className="text-blue-600 text-5xl hover:opacity-80" />
+              <FaFacebook className="text-blue-600 text-3xl md:text-5xl hover:opacity-80" />
             </a>
             <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter className="text-blue-600 text-5xl hover:opacity-80" />
+              <FaTwitter className="text-blue-600 text-3xl md:text-5xl hover:opacity-80" />
             </a>
             <a
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="text-blue-600 text-5xl hover:opacity-80" />
+              <FaInstagram className="text-blue-600 text-3xl md:text-5xl hover:opacity-80" />
             </a>
           </div>
         </div>

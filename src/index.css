@@ -12,3 +12,22 @@
   display: inline-block;
   animation: marquee 10s linear infinite;
 }
+
+/* footer hover */
+.text-hover-underline {
+  position: relative;
+  display: inline-block;
+}
+.text-hover-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.4s ease;
+}
+.text-hover-underline:hover::before {
+  width: 100%;
+}
