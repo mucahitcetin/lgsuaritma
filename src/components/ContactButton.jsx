@@ -4,7 +4,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 
 const ContactButton = () => {
   const handlePhoneCall = () => {
-    window.location.href = 'tel:05061234567';
+    window.location.href = 'tel:05438315966';
   };
 
   return (
