@@ -1,14 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MdOutlineMenu } from "react-icons/md";
 import Head from './Head';
 
-
-
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null); // Menü dışına tıklamayı kontrol etmek için referans
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) setMenuOpen(false);
+    };
+
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="relative">
+    <div className="relative" ref={menuRef}>
       {/* Üst Animasyonlu Yazı */}
       <Head />
 
@@ -18,23 +38,20 @@ const Header = () => {
           <h3 className="text-3xl font-bold">LOGO</h3>
         </Link>
 
-        {/* Navigasyon Menüsü */}
-        <nav className={`lg:flex gap-6 ${menuOpen ? 'block' : 'hidden'}`}>
+        {/* Navigasyon Menüsü (Desktop) */}
+        <nav className={`lg:flex gap-6 hidden`}>
           <Link
             to="/hakkimizda"
             className="py-4 px-2 transition-colors duration-200 hover:bg-primary hover:text-white font-bold text-lg"
           >
             Hakkımızda
           </Link>
-
           <Link
             to="/ürünler"
             className="py-4 px-2 transition-colors duration-200 hover:bg-primary hover:text-white font-bold text-lg"
           >
             Ürünler
           </Link>
-        
-
           <Link
             to="/yorumlar"
             className="py-4 px-2 transition-colors duration-200 hover:bg-primary hover:text-white font-bold text-lg"
@@ -49,7 +66,7 @@ const Header = () => {
           </Link>
         </nav>
 
-        {/* Hamburger Menü */}
+        {/* Hamburger Menü (Mobil) */}
         <div className="lg:hidden flex items-center">
           <MdOutlineMenu
             onClick={() => setMenuOpen(!menuOpen)}
@@ -57,6 +74,40 @@ const Header = () => {
           />
         </div>
       </header>
+
+      {/* Açılır Menü (Mobil) */}
+      {menuOpen && (
+        <div className="absolute bg-primary w-full h-48 flex flex-col items-center gap-4 py-6 top-full left-0 z-40 text-start">
+          <Link
+            to="/hakkimizda"
+            className="text-white font-bold text-lg hover:bg-white hover:text-primary w-full"
+            onClick={() => setMenuOpen(false)}
+          >
+            Hakkımızda
+          </Link>
+          <Link
+            to="/ürünler"
+            className="text-white font-bold text-lg  hover:bg-white hover:text-primary w-full"
+            onClick={() => setMenuOpen(false)}
+          >
+            Ürünler
+          </Link>
+          <Link
+            to="/yorumlar"
+            className="text-white font-bold text-lg  hover:bg-white hover:text-primary w-full"
+            onClick={() => setMenuOpen(false)}
+          >
+            Yorumlar
+          </Link>
+          <Link
+            to="/iletişim"
+            className="text-white font-bold text-lg  hover:bg-white hover:text-primary w-full"
+            onClick={() => setMenuOpen(false)}
+          >
+            İletişim
+          </Link>
+        </div>
+      )}
     </div>
   );
 };

@@ -1,14 +1,13 @@
-import React, { useRef, useEffect, useState } from "react";
-import { IoChevronDown } from "react-icons/io5";
+import React, { useState, useRef, useEffect } from 'react';
+import { IoChevronDown } from 'react-icons/io5';
 
 const DropdownMenu = ({ label, options, isOpen, onClick }) => {
   const [height, setHeight] = useState(0);
   const contentRef = useRef(null);
 
-  // Açılma/Kapanma durumunda yüksekliği ayarla
   useEffect(() => {
     if (isOpen) {
-      setHeight(contentRef.current.scrollHeight); // İçeriğin yüksekliğini alır
+      setHeight(contentRef.current.scrollHeight);
     } else {
       setHeight(0);
     }
@@ -18,26 +17,21 @@ const DropdownMenu = ({ label, options, isOpen, onClick }) => {
     <div className="relative">
       <button
         onClick={onClick}
-        className="flex items-center gap-1 text-lg font-semibold transition-all duration-200 hover:text-secondary cursor-pointer"
+        className="cursor-pointer flex items-center text-lg font-semibold mt-4 lg:mt-0 gap-1 hover:text-secondary transition-all duration-200"
       >
         {label}
-        <IoChevronDown className="text-xl" />
+        <IoChevronDown />
       </button>
-
-      {/* Dropdown içerik */}
       <div
         ref={contentRef}
         style={{ height }}
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
-          window.innerWidth >= 1024 ? "absolute bg-white shadow-lg mt-2" : ""
+          isOpen ? 'block' : 'hidden'
         }`}
       >
-        <ul className="p-2 bg-red-300 z-40">
+        <ul className="mt-2 bg-primary text-white shadow-md rounded p-2">
           {options.map((option, index) => (
-            <li
-              key={index}
-              className="p-2 text-primary hover:bg-primary hover:text-white rounded cursor-pointer transition-all duration-200"
-            >
+            <li key={index} className="dropdown-item">
               {option}
             </li>
           ))}
