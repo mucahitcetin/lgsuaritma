@@ -108,7 +108,6 @@ const Contact = () => {
                   name="fullName"
                   id="fullName"
                   required
-                  placeholder="Ahmet Yılmaz"
                   className="w-full p-2.5 rounded-lg border border-gray-300"
                 />
               </div>
@@ -125,7 +124,6 @@ const Contact = () => {
                   name="city"
                   id="city"
                   required
-                  placeholder="İstanbul"
                   className="w-full p-2.5 rounded-lg border border-gray-300"
                 />
               </div>
@@ -142,7 +140,6 @@ const Contact = () => {
                   name="district"
                   id="district"
                   required
-                  placeholder="Kadıköy"
                   className="w-full p-2.5 rounded-lg border border-gray-300"
                 />
               </div>
@@ -159,7 +156,6 @@ const Contact = () => {
                   name="email"
                   id="email"
                   required
-                  placeholder="ornek@gmail.com"
                   className="w-full p-2.5 rounded-lg border border-gray-300"
                 />
               </div>
@@ -176,7 +172,6 @@ const Contact = () => {
                   name="phone"
                   id="phone"
                   required
-                  placeholder="+90 555 555 5555"
                   className="w-full p-2.5 rounded-lg border border-gray-300"
                 />
               </div>

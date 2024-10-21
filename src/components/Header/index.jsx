@@ -5,7 +5,7 @@ import Head from './Head';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef(null); // Menü dışına tıklamayı kontrol etmek için referans
+  const menuRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
