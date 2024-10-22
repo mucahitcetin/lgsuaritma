@@ -33,7 +33,7 @@ const Header = () => {
       <Head />
 
       {/* Header */}
-      <header className="bg-white text-primary flex items-center lg:justify-around justify-between px-8 py-3 top-0 left-0 w-full z-50">
+      <header className="bg-gray-100 shadow-lg rounded-b-xl text-primary flex items-center lg:justify-around justify-between px-8 py-3 top-0 left-0 w-full z-50">
         <Link to="/">
           <h3 className="text-3xl font-bold">LOGO</h3>
         </Link>
