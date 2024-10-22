@@ -2,9 +2,10 @@ import React from "react";
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-4 w-72">
+    <div className="bg-white rounded-xl shadow-lg p-6 w-80 mx-auto mb-4 border-gray border ">
+      <div className="border-primary/50 border px-6 py-2  rounded-xl shadow-lg">
       {/* Üstteki indirim etiketi */}
-      <div className="bg-red-500 text-white text-sm px-2 py-1 rounded-tl-lg rounded-br-lg w-max">
+      <div className="bg-red-500 text-white text-sm px-2 py-1 rounded-tl-lg rounded-br-lg w-max ">
         {product.discount.toLocaleString("tr-TR", { style: "currency", currency: "TRY" })} tasarruf edin
       </div>
 
@@ -31,8 +32,10 @@ const ProductCard = ({ product }) => {
           <span className="ml-1">{product.rating}</span>
         </div>
       </div>
+      </div>
     </div>
   );
 };
+
 
 export default ProductCard;

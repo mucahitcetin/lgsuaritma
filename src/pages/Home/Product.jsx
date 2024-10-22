@@ -13,12 +13,12 @@ const Product = () => {
     },
     {
       title: 'Su Arıtma Filtreleri',
-      image: '/ürün2.jpg',
+      image: '/filters.webp',
       url: '/ürünler/filtreler',
     },
     {
       title: 'Su Arıtma Yedek Parçaları ve Aksesuarları',
-      image: '/ürün3.jpg',
+      image: '/aksesuvar2.webp',
       url: '/ürünler/aksesuarlar',
     },
   ];
