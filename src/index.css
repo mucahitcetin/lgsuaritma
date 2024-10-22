@@ -3,15 +3,34 @@
 @tailwind utilities;
 
 
-@keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #0d1b2a;
+  position: relative;
 }
 
-.animate-marquee {
-  display: inline-block;
-  animation: marquee 10s linear infinite;
+.marquee {
+  display: flex;
+  width: 200%; /* İçeriğin akışı için genişliği artırıyoruz */
+  animation: marquee 13s linear infinite;
 }
+
+.marquee-content {
+  display: flex;
+  flex-shrink: 0;
+
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 
 /* footer hover */
 .text-hover-underline {
