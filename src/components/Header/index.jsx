@@ -77,31 +77,31 @@ const Header = () => {
 
       {/* Açılır Menü (Mobil) */}
       {menuOpen && (
-        <div className="absolute bg-primary w-full h-48 flex flex-col items-center gap-4 py-6 top-full left-0 z-40 text-start">
+        <div className="absolute bg-primary w-full h-48 flex flex-col  gap-4 py-6 top-full left-0 z-40 text-start items-start">
           <Link
             to="/hakkimizda"
-            className="text-white font-bold text-lg hover:bg-white hover:text-primary w-full"
+            className="text-white font-bold text-lg hover:bg-white hover:text-primary w-1/4 pl-4 ml-1"
             onClick={() => setMenuOpen(false)}
           >
             Hakkımızda
           </Link>
           <Link
             to="/ürünler"
-            className="text-white font-bold text-lg  hover:bg-white hover:text-primary w-full"
+            className="text-white font-bold text-lg  hover:bg-white hover:text-primary w-1/4 pl-4 ml-1"
             onClick={() => setMenuOpen(false)}
           >
             Ürünler
           </Link>
           <Link
             to="/yorumlar"
-            className="text-white font-bold text-lg  hover:bg-white hover:text-primary w-full"
+            className="text-white font-bold text-lg  hover:bg-white hover:text-primary w-1/4 pl-4 ml-1"
             onClick={() => setMenuOpen(false)}
           >
             Yorumlar
           </Link>
           <Link
             to="/iletişim"
-            className="text-white font-bold text-lg  hover:bg-white hover:text-primary w-full"
+            className="text-white font-bold text-lg  hover:bg-white hover:text-primary w-1/4  pl-4 ml-1"
             onClick={() => setMenuOpen(false)}
           >
             İletişim
