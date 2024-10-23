@@ -7,8 +7,13 @@ const Footer = () => {
     <footer className="bg-primary text-white py-8 px-4 text-center">
       {/* Logo */}
       <div className="text-center mb-4">
-        <Link to="/" className="text-white font-bold text-lg">
-          Su Arıtma Sitesi
+      <Link to="/" className="flex items-center justify-center">
+          {/* Logo */}
+          <img
+            src="logo.svg"
+            alt="Logo"
+            className="w-24 h-20 rounded-full object-cover transition-all duration-300 bg-white pt-1"
+          />
         </Link>
       </div>
 
@@ -36,7 +41,7 @@ const Footer = () => {
       {/* Menü */}
       <div className="flex flex-col md:flex-row justify-center mb-4 text-center">
         <div className="mb-2 md:mb-0 md:mr-8 ">
-          <Link to="/hakkımızda" className="rounded cursor-pointer transition-all duration-200 text-hover-underline">Hakkımızda</Link>
+          <Link to="/hakkimizda" className="rounded cursor-pointer transition-all duration-200 text-hover-underline">Hakkımızda</Link>
         </div>
         <div className="mb-2 md:mb-0 md:mr-8">
           <Link to="/ürünler" className="rounded cursor-pointer transition-all duration-200 text-hover-underline">Ürünler</Link>

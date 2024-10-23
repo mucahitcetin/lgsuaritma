@@ -34,8 +34,13 @@ const Header = () => {
 
       {/* Header */}
       <header className="bg-gray-100 shadow-lg rounded-b-xl text-primary flex items-center lg:justify-around justify-between px-8 py-3 top-0 left-0 w-full z-50">
-        <Link to="/">
-          <h3 className="text-3xl font-bold">LOGO</h3>
+      <Link to="/" className="flex items-center">
+          {/* Logo */}
+          <img
+            src="logo.svg"
+            alt="Logo"
+            className="w-16 h-16 md:w-24 md:h-20 lg:w-28 lg:h-20 rounded-full object-cover transition-all duration-300"
+          />
         </Link>
 
         {/* Navigasyon Menüsü (Desktop) */}
@@ -70,7 +75,7 @@ const Header = () => {
         <div className="lg:hidden flex items-center">
           <MdOutlineMenu
             onClick={() => setMenuOpen(!menuOpen)}
-            className="cursor-pointer text-white bg-primary w-8 h-8 rounded-md"
+            className="cursor-pointer text-white bg-primary w-8 h-8 rounded-md mb-2"
           />
         </div>
       </header>
