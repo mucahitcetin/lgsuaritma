@@ -18,7 +18,7 @@ const Product = () => {
     },
     {
       title: 'Su Arıtma Yedek Parçaları ve Aksesuarları',
-      image: '/aksesuvar2.webp',
+      image: '/aksesuvar1.jpg',
       url: '/ürünler/aksesuarlar',
     },
   ];
