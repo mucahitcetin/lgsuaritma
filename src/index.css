@@ -12,7 +12,7 @@
 
 .marquee {
   display: flex;
-  width: 200%; /* İçeriğin akışı için genişliği artırıyoruz */
+  width: 200%;
   animation: marquee 13s linear infinite;
 }
 

@@ -18,7 +18,7 @@ const Product = () => {
     },
     {
       title: 'Su Arıtma Yedek Parçaları ve Aksesuarları',
-      image: '/aksesuvar1.jpg',
+      image: '/aksesuvar5.jpg',
       url: '/ürünler/aksesuarlar',
     },
   ];
@@ -43,7 +43,7 @@ const Product = () => {
               alt={product.title}
               className="absolute inset-0 w-full h-full object-contain opacity-75"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center flex-col">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center flex-col">
               <h2 className="text-white text-2xl text-center font-bold group-hover:translate-x-1 transition-opacity duration-300">
                 {product.title}
               </h2>
