@@ -16,7 +16,7 @@ const About = () => {
         {/* Sağ Bölüm: İçerik */}
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-3xl font-bold mb-4 text-primary">
-            Saflık ve Kalite: Su Arıtma Sistemleri
+          Ev ve Ofis Su Arıtma Sistemleri
           </h1>
           <p className="text-lg text-gray-600 mb-4">
             Günümüzde temiz suya erişim, sağlıklı yaşamın temel bir unsurudur.

@@ -19,21 +19,19 @@ const Footer = () => {
 
       {/* Adres */}
       <div className="text-center mb-4">
-        <p>Adres: Örnek Mah. No: 123, İstanbul</p>
+        <p>İstanbul Avrupa Bölge Bayi</p>
+        <p>Tel: 0 543 831 59 66</p>
       </div>
 
       {/* Sosyal Medya Logoları */}
       <div className="flex justify-center space-x-4 mb-4">
-        <a href="https://wa.me/905061010501" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/905438315966" target="_blank" rel="noopener noreferrer">
           <FaWhatsapp className="text-white text-3xl hover:opacity-80" />
         </a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/profile.php?id=61564246895052&locale=tr_TR " target="_blank" rel="noopener noreferrer">
           <FaFacebook className="text-white text-3xl hover:opacity-80" />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <FaTwitter className="text-white text-3xl hover:opacity-80" />
-        </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/3msuaritma" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-white text-3xl hover:opacity-80" />
         </a>
       </div>

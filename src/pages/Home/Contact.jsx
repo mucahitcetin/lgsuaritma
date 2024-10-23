@@ -52,7 +52,7 @@ const Contact = () => {
             sorular sormak ya da fiyat teklifi almak için bizimle iletişime
             geçebilirsiniz. Sağlıklı ve temiz suya ulaşmak için buradayız!
           </p>
-          <p>Adres:</p>
+          <p>İstanbul Avrupa Bölge Bayi</p>
           {/* logolar */}
           <div className="flex gap-4 mt-5">
             <a
