@@ -13,7 +13,7 @@ const Product = () => {
     },
     {
       title: 'Su Arıtma Filtreleri',
-      image: '/filters.webp',
+      image: '/filter2.jpg',
       url: '/ürünler/filtreler',
     },
     {

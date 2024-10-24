@@ -55,32 +55,13 @@ const Contact = () => {
           <p>İstanbul Avrupa Bölge Bayi</p>
           {/* logolar */}
           <div className="flex gap-4 mt-5">
-            <a
-              href="https://wa.me/905061010501"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <a href="https://wa.me/905438315966" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp className="text-blue-600 text-3xl md:text-5xl hover:opacity-80" />
             </a>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.facebook.com/profile.php?id=61564246895052&locale=tr_TR " target="_blank" rel="noopener noreferrer">
               <FaFacebook className="text-blue-600 text-3xl md:text-5xl hover:opacity-80" />
             </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter className="text-blue-600 text-3xl md:text-5xl hover:opacity-80" />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.instagram.com/3msuaritma" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="text-blue-600 text-3xl md:text-5xl hover:opacity-80" />
             </a>
           </div>
